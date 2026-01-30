@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keylogger - Advanced Monitoring Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div class="background-effects">
+        <div class="glow-1"></div>
+        <div class="glow-2"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i data-lucide="terminal"></i>
+            <span>Keylogger_</span>
+        </div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#usage">Usage</a>
+            <a href="https://github.com/SamarthSRao/keylogger" target="_blank" class="github-link">
+                <i data-lucide="github"></i> GitHub
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="badge">release v1.0.0</div>
+                <h1>Monitor Activity <br />Silently &<span class="highlight"></span> Efficiently</span></h1>
+                <p class="hero-desc">
+                    A lightweight, C++ based keystroke logger for Windows.
+                    Designed for educational purposes and system monitoring.
+                    Runs invisibly in the background.
+                </p>
+                <div class="cta-group">
+                    <a href="../keylogger.exe" download class="btn btn-primary">
+                        <i data-lucide="download"></i> Download Executable
+                    </a>
+                    <a href="#usage" class="btn btn-secondary">
+                        How to use <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+                <p class="disclaimer-text">
+                    <i data-lucide="alert-triangle" size="14"></i>
+                    For educational purposes only. Unauthorized use is illegal.
+                </p>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">keylog.txt</span>
+                    </div>
+                    <div class="window-content">
+                        <pre><code><span class="comment">// Recent activity log</span>
+[10:45:02] [ENTER]
+[10:45:05] login_user
+[10:45:08] [TAB]
+[10:45:10] **********
+[10:45:12] [ENTER]</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>System Capabilities</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i data-lucide="zap"></i>
+                    <h3>Lightweight C++</h3>
+                    <p>Written in pure C++ for minimal memory footprint and high performance.</p>
+                </div>
+                <div class="feature-card">
+                    <i data-lucide="ghost"></i>
+                    <h3>Background Mode</h3>
+                    <p>Runs silently in the background without a visible window.</p>
+                </div>
+                <div class="feature-card">
+                    <i data-lucide="keyboard"></i>
+                    <h3>Full Key Support</h3>
+                    <p>Captures all alphanumeric keys, special characters, and system keys.</p>
+                </div>
+                <div class="feature-card">
+                    <i data-lucide="file-text"></i>
+                    <h3>Local Storage</h3>
+                    <p>Logs are securely appended to a local text file for easy access.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="usage" class="usage">
+            <div class="usage-container">
+                <h2>Quick Start Guide</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Download</h3>
+                            <p>Get the latest <code>keylogger.exe</code> binary.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Run</h3>
+                            <p>Execute the file. It will immediately start recording in the background.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>Monitor</h3>
+                            <p>Check the <code>keylog.txt</code> file created in the same directory.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Keylogger Project. Open Source.</p>
+            <p class="footer-disclaimer">User is responsible for compliance with local laws.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
