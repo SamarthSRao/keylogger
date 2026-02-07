@@ -2,8 +2,7 @@
 
 A basic keylogger for Windows written in C++. This program records keystrokes to a log file.
 
-## Features
-
+## Feature
 - Records all keystrokes to keylog.txt
 - Handles special keys (Enter, Backspace, Tab, etc.)
 - Logs are appended to the existing file
